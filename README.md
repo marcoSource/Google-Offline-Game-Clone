@@ -12,6 +12,8 @@ This is a project that have an objective, LEARN. So none of the art work, or the
 
 ## Game:
 
+To run the game you need to clone the repository and you need the processing ide installed too.
+
 ### Features:
 
 * Basic game mechanics
