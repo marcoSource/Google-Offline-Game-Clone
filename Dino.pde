@@ -21,7 +21,6 @@ class Dino {
 
   void jump() {
      pos.y += vel.y * delta; 
-     println(delta + "" + vel.y);
   }
 
   PVector getPos() {
