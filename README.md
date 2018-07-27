@@ -24,7 +24,7 @@ To run the game you need to clone the repository and you need the processing ide
 
 ### TODO:
 
-* Improve the score mechanics
+* Improve the score mechanics (Done in 27/7/2018)
 * Improve the dino jump mechanis
 * Add clouds
 * Add flying objects
