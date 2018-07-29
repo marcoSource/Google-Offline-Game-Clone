@@ -14,6 +14,8 @@ This is a project that have an objective, LEARN. So none of the art work, or the
 
 To run the game you need to clone the repository and you need the processing ide installed too.
 
+* Version 0.1:
+
 ### Features:
 
 * Basic game mechanics
@@ -24,8 +26,26 @@ To run the game you need to clone the repository and you need the processing ide
 
 ### TODO:
 
-* Improve the score mechanics (Done in 27/7/2018)
-* Improve the dino jump mechanis
+* Improve the score mechanics (27/7)
+* Improve the dino jump mechanis (29/7)
+* Add clouds
+* Add flying objects
+* Crouch
+* Dead animation
+
+* Version 0.2:
+
+### Features:
+
+* Basic game mechanics
+* Start game animation (Press SPACE to start)
+* Animated Text
+* Score
+* Random spawning of object
+* Basic collision
+
+### TODO:
+
 * Add clouds
 * Add flying objects
 * Crouch
