@@ -16,6 +16,7 @@ To run the game you need to clone the repository and you need the processing ide
 
 * Version 0.1:
 
+```
 ### Features:
 
 * Basic game mechanics
@@ -32,9 +33,11 @@ To run the game you need to clone the repository and you need the processing ide
 * Add flying objects
 * Crouch
 * Dead animation
+```
 
 * Version 0.2:
 
+```
 ### Features:
 
 * Basic game mechanics
@@ -50,6 +53,8 @@ To run the game you need to clone the repository and you need the processing ide
 * Add flying objects
 * Crouch
 * Dead animation
+
+```
 
 ### Controls:
 
