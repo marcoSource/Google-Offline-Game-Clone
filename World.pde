@@ -7,6 +7,7 @@ class World {
   int timer;
 
   Box _box;
+  Game game = new Game();
 
   World() {
     dino = new Dino(10, height - 70);
@@ -27,12 +28,12 @@ class World {
   }
 
   void update() {
-    if(timer < time) {
+    if (timer < time) {
       timer++;
     } else if (timer >= time) {
-      time = random(10, 75);
+      time = getTimeSpawnByObjective();
       timer = 0;
-      if(started)
+      if (started)
         cactus.add(new Cactus(width + 20, height - 70));
     }
     for (Cactus cactu : cactus) {
@@ -42,6 +43,7 @@ class World {
       Cactus temp = cactus.get(i);
       if (temp.isOut()) {
         cactus.remove(temp);
+        score++;
       }
     }
 
@@ -52,21 +54,39 @@ class World {
   void applyGravity() {
     if (dino.getPos().y < height - 70) {
       dino.getPos().y += .2f * delta;
-      dino.getPos().x += .05f;
     }
   }
 
   Dino getDino() {
     return dino;
   }
-  
-  void removeAll(){
-    if(lose){
+
+  void removeAll() {
+    if (lose) {
       ArrayList<Cactus> toRemove = new ArrayList<Cactus>();
-      for(Cactus c : cactus){
+      for (Cactus c : cactus) {
         toRemove.add(c);
       }
       cactus.removeAll(toRemove);
     }
+  }
+
+  int getTimeSpawnByObjective() {
+    if (game.getObjectiveByScore(score) == 0) {
+      return (int)random(75, 150);
+    } else if (game.getObjectiveByScore(score) == 1) {
+      return (int)random(80, 145);
+    } else if (game.getObjectiveByScore(score) == 2) {
+      return (int)random(85, 140);
+    } else if (game.getObjectiveByScore(score) == 3) {
+      return (int)random(90, 135);
+    } else if (game.getObjectiveByScore(score) == 4) {
+      return (int)random(95, 130);
+    } else if (game.getObjectiveByScore(score) == 5) {
+      return (int)random(100, 125);
+    } else if (game.getObjectiveByScore(score) == 6) {
+      return (int)random(105, 120);
+    }
+    return 0;
   }
 }

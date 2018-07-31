@@ -9,7 +9,7 @@ class Cactus {
     w = 30;
     h = 40;
     pos = new PVector(posX, posY);
-    vel = new PVector(-10, 0);
+    vel = new PVector(0, 0);
     texture = loadImage("cactu.png");
     renderBox = new Box(pos.x-5, pos.y-5, 40, 50);
   }
@@ -36,6 +36,10 @@ class Cactus {
 
   PVector getPos() {
     return pos;
+  }
+  
+  PVector getVel(){
+    return vel;
   }
 
   int getWidth() {
