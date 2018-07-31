@@ -75,6 +75,7 @@ To run the game you need to clone the repository and you need the processing ide
 * Add flying objects
 * Crouch
 * Dead animation
+* Dino animation
 
 ```
 
