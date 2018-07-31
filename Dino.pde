@@ -3,10 +3,12 @@ class Dino {
   PVector pos, vel;
   PImage texture;
   Box renderBox;
+  
+  boolean isInGround;
 
   Dino(int posX, int posY) {
     pos = new PVector(posX, posY);
-    vel = new PVector(0, -5);
+    vel = new PVector(+2, -4);
     texture = loadImage("dino.png");
     renderBox = new Box(pos.x, pos.y+5, 45, 40);
   }
@@ -20,14 +22,22 @@ class Dino {
   }
 
   void jump() {
-     pos.y += vel.y * delta; 
+    pos.y += vel.y * delta;
+    
   }
 
   PVector getPos() {
     return pos;
   }
-  
-  PVector getVel(){
+
+  PVector getVel() {
     return vel;
+  }
+  
+  boolean isInGround(){
+    if(pos.y > (groundHeight - 42)){
+        return true;
+    }
+    return false;
   }
 }
