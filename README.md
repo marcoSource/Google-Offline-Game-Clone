@@ -56,6 +56,28 @@ To run the game you need to clone the repository and you need the processing ide
 
 ```
 
+* Version 0.3:
+
+```
+### Features:
+
+* Basic game mechanics
+* Start game animation (Press SPACE to start)
+* Animated Text
+* Score
+* Random spawning of object
+* Basic collision
+* Progressive gameplay depending on score
+
+### TODO:
+
+* Add clouds
+* Add flying objects
+* Crouch
+* Dead animation
+
+```
+
 ### Controls:
 
 * R - Restart
